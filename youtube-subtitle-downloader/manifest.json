@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Subtitle Downloader",
+    "version": "3.4.3",
+    "description": "Download subtitle (Closed Caption) from YouTube",
+    "icons": {
+        "48": "images/download-64.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "all_frames": false,
+            "js": [
+                "js/content.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "js/common.js",
+                "js/gui.js",
+                "js/timed-to-srt-converter.js",
+                "js/youtube-subtitle-downloader.js"
+            ],
+            "matches": [
+                "*://*.youtube.com/*"
+            ]
+        }
+    ]
+}
