@@ -30,6 +30,8 @@ Subtitle in YouTube is also called Closed Caption.
 |  3.4.3  | 22/03/2025 | Use manifest version 3 (Chrome no longer supports version 2) |
 |  3.5.0  | 11/06/2025 | Bypass Proof of Origin Token                                 |
 
+Firefox does not support "/background/service_worker". Use "/background/scripts": [""] instead.
+
 ### References
 
 [Google2SRT - Download, save and convert multiple subtitles from YouTube and Google Video to SRT - Home](https://google2srt.sourceforge.io/en/)

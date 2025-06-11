@@ -83,10 +83,16 @@ const convertFromTimedToSrtFormat = xml => {
     let content = ''
     let count = 1
 
-    const trustedPolicy = trustedTypes.createPolicy('myPolicy', {
-        createHTML: s => s
-    })
-    const trustedXml = trustedPolicy.createHTML(xml)
+    let trustedXml
+    if (window.trustedTypes && window.trustedTypes.createPolicy) {
+        console.log('trustedTypes')
+        const trustedPolicy = window.trustedTypes.createPolicy('my-extension-policy', {
+            createHTML: s => s
+        })
+        trustedXml = trustedPolicy.createHTML(xml)
+    } else {
+        trustedXml = xml
+    }
 
     const parser = new DOMParser()
     const xmlDoc = parser.parseFromString(trustedXml, 'text/xml')
