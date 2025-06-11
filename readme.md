@@ -1,14 +1,14 @@
-## Tiện ích download subtitle từ YouTube
+## Utility to download subtitle from YouTube
 
 Screenshot:
 
 ![img](images/screenshot%2020190927.png)
 
-Subtitle ở YouTube gọi là Closed Caption.
+Subtitle in YouTube is also called Closed Caption.
 
 ### Release notes
 
-| Version | Thời gian  | Mô tả                                                        |
+| Version |    Date    | Description                                                  |
 | :-----: | :--------: | :----------------------------------------------------------- |
 |  0.0.1  | 23/05/2016 | First runable.                                               |
 |  0.0.2  | 24/05/2016 | Fix Mozilla review.                                          |
@@ -28,18 +28,21 @@ Subtitle ở YouTube gọi là Closed Caption.
 |  3.4.1  | 19/09/2023 | Fix bug JSON.parse khi gọi fetch nếu sử dụng uBlock Origin.  |
 |  3.4.2  | 16/10/2024 | Fix bug "TrustedHTML"                                        |
 |  3.4.3  | 22/03/2025 | Use manifest version 3 (Chrome no longer supports version 2) |
+|  3.5.0  | 11/06/2025 | Bypass Proof of Origin Token                                 |
 
-### Tham khảo
+### References
 
-https://google2srt.sourceforge.io/en/
+[Google2SRT - Download, save and convert multiple subtitles from YouTube and Google Video to SRT - Home](https://google2srt.sourceforge.io/en/)
 
-https://github.com/ytdl-org/youtube-dl
+[ytdl-org/youtube-dl: Command-line program to download videos from YouTube.com and other video sites](https://github.com/ytdl-org/youtube-dl)
+
+[yt-dlp/yt-dlp: A feature-rich command-line audio/video downloader](https://github.com/yt-dlp/yt-dlp)
 
 https://github.com/kyamashiro/youtube-subtitle-download-helper
 
 [Link Firefox](https://addons.mozilla.org/en-US/firefox/addon/youtube-subtitle-downloader/)
 
-[~~Link Chrome (đã bị Google gỡ)~~](https://chrome.google.com/webstore/detail/youtube-subtitle-download/falajjjalaffofcbkhgdemihkpllibom)
+[~~Link Chrome (Taken down)~~](https://chrome.google.com/webstore/detail/youtube-subtitle-download/falajjjalaffofcbkhgdemihkpllibom)
 
 [Firefox dashboard](https://addons.mozilla.org/en-US/developers/addons)
 
